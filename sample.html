@@ -1,0 +1,129 @@
+ <html>
+  <head> 
+    <style type="text/css"> 
+    body {
+    font-family:arial;
+    	font-size:10;
+    	font-weight:bold;
+       	margin: 30px;
+    	}
+	header, footer {
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+     }
+    </style>
+	<script>
+	
+	function Sum() 
+    { 
+    num1 = document.getElementById("first").value; 
+    num2 = document.getElementById("second").value; 
+    document.getElementById("tarea").value +=(document.getElementById("result").value = Number(num1) + Number(num2))
+	} 
+    
+    function Subtract()
+    {
+    num1 = document.getElementById("first").value; 
+    num2 = document.getElementById("second").value; 
+	document.getElementById("tarea").value +=(document.getElementById("result").value = Number(num1) - Number(num2))
+	} 
+	
+	function addAppend(){
+	document.getElementById("tarea1").value +=document.getElementById("enterTest").value;
+	}
+	function del(){
+	document.getElementById("enterTest").value="";
+	}
+		
+	function add(){
+	document.getElementById("tarea2").value +=document.getElementById("tarea1").value
+	}
+	function addAll(){
+	
+	document.getElementById("tarea2").value +=document.getElementById("tarea1").value
+	}
+	function remove(){}
+	function removeAll(){}
+	
+    </script>
+    </head> 
+    <body> 
+    
+    <header>
+    <h1 align ="center"> Captain Cool </h1>
+    </header>
+	
+	<div style="width:100%;"> 
+
+<div style="float:left; width:20%;">
+    Number1 : <input type="text" id="first" maxlength="4" size="4"> <br>
+    Number2 : <input type="text" id="second" maxlength="4" size="4" />
+    <br><br>
+    <input type="button" onClick="Sum()" Value="Sum"  
+    title="Click here to find the sum of the two numbers." /> &nbsp;&nbsp;&nbsp;
+    <input type="button" onClick="Subtract()" 
+    title="Click here to find the differece of the two numbers." 
+    Value="Sub" /> &nbsp;
+	<p>
+	Result <input type="text" id="result" size="4"> 
+	</p>
+      
+  Previous 10 Values<br>
+  <textarea  rows="4" cols="4" id="tarea"> </textarea>
+     
+</div>
+<div style="float:right; width:80%;">
+
+	Enter a String<br>
+	<input type="text" maxlength="10" size="10" id ="enterTest"> <br> <br>
+	
+	<input type="button" value="Add" onClick="addAppend()"
+		title="Click here to add above value to below textarea." > 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+	<input type="button" onClick="del()" Value="Clear" >
+	
+	<br>
+	<div style="float:left; width:5%;">
+	 <p>
+	 <textarea rows="5" cols="4" id="tarea1"> </textarea>
+	 </p>
+    </div>
+	 <div style="float:left; width:5%;"> 
+	 <p>
+	 <input type="button" onClick="add()" Value=">" > <br>
+	 <input type="button" onClick="addAll()" Value=">>" > <br>
+	 <input type="button" onClick="remove()" Value="<" > <br>
+	 <input type="button" onClick="removeAll()" Value="<<" >
+	 </p>
+	 </div>
+	 	<div style="float:left; width:15%;"> 
+		<textarea rows="5" cols="4" id="tarea2"> </textarea>
+		</div>
+</div> 
+</div>
+	<footer>
+	Copyright &copy; CaptainCool.com
+	</footer>
+	
+</div>
+</body> 
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
